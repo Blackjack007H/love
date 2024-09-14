@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('1.webp');  /* 背景图片 */
+    background-size: cover;  /* 背景图片平铺 */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia', serif;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    background: rgba(255, 0, 0, 0.5); /* 半透明红色背景 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.message h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000; /* 黑色阴影文字 */
+}
