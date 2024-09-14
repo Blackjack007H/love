@@ -1,7 +1,6 @@
 body {
-    background-color: #f5f5dc; /* 使用米黄色背景，模拟信纸颜色 */
+    background-color: #f5f5dc; /* 模拟信纸颜色 */
     font-family: 'Dancing Script', cursive; /* 使用手写风格字体 */
-    color: #333;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -11,28 +10,49 @@ body {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.9); /* 半透明的白色背景，类似纸张 */
+    background: rgba(255, 255, 255, 0.9); /* 半透明的白色背景，模拟纸张 */
     padding: 40px;
     width: 70%;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 纸张阴影效果 */
     border-radius: 10px;
-    font-size: 1.5em; /* 文字稍大，模仿书信的排版 */
-    line-height: 1.8;
     border: 1px solid #ddd; /* 纸张边框 */
+    font-size: 1.5em; /* 文字稍大，模仿书信的排版 */
+    line-height: 2; /* 调整行高，增加行距 */
+    position: relative;
 }
 
 h1 {
     font-family: 'Great Vibes', cursive; /* 使用更加优雅的手写字体 */
     font-size: 2.5em;
-    color: #8b4513; /* 使用深棕色，模仿墨水颜色 */
+    color: #8b4513; /* 深棕色标题，模仿墨水颜色 */
     text-align: center;
     margin-bottom: 20px;
 }
 
 p {
-    text-indent: 50px; /* 首行缩进，模拟信件书写格式 */
+    font-size: 1.5em;
+    line-height: 2; /* 保证每行文字有足够的间隔 */
     margin-bottom: 20px;
+    position: relative;
+}
+
+p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 90%,
+        #ccc 91%,
+        #ccc 100%
+    );
+    z-index: -1;
+    height: 100%;
 }
 
 a {
@@ -45,9 +65,6 @@ a {
 }
 
 a:hover {
-    color: #a0522d; /* 鼠标悬停时的颜色变化 */
+    color: #a0522d; /* 鼠标悬停时颜色变化 */
 }
 
-a:hover {
-    color: #228b22; /* 鼠标悬停时变为亮绿色 */
-}
