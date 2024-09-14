@@ -1,0 +1,41 @@
+body {
+    background-color: #f5f5dc; /* 使用一种温暖的米黄色背景 */
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 182, 193, 0.8); /* 半透明的粉色背景 */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #8b0000; /* 深红色标题 */
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #006400; /* 深绿色的返回链接 */
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    color: #228b22; /* 鼠标悬停时变为亮绿色 */
+}
