@@ -12,7 +12,7 @@ body {
 
 .container {
     text-align: center;
-    background: rgba(255, 182, 193, 0.8); /* 半透明的粉色背景 */
+    background: rgba(255, 182, 193, 0.8); 
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
