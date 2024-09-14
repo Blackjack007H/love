@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #ffe6f0;  /* 柔和的粉色背景 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,28 +16,29 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: #d47fa6; /* 浅粉色文字 */
 }
 
 .calendar-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* 每行显示4个月 */
+    grid-template-columns: repeat(2, 1fr);  /* 两列布局，形成田字形 */
     gap: 20px;
 }
 
 .month {
-    background-color: #ffffff;
-    border-radius: 8px;
+    background-color: #ffe0eb;  /* 浅粉色背景 */
+    border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .month-name {
-    background-color: #5dade2;
+    background-color: #ff99cc;  /* 深粉色顶部 */
     color: white;
     padding: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 10px;
     border-radius: 4px;
 }
@@ -49,7 +50,7 @@ h1 {
 }
 
 .day-name {
-    background-color: #f39c12;
+    background-color: #ffb3d9;  /* 浅粉橙色的星期标签 */
     color: white;
     padding: 10px;
     border-radius: 4px;
@@ -57,19 +58,37 @@ h1 {
 }
 
 .date {
-    background-color: #e67e22;
+    background-color: #ffccd5;  /* 柔和的粉色日期 */
     color: white;
     padding: 10px;
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
     display: block;
+    transition: background-color 0.3s ease;
 }
 
 .date:hover {
-    background-color: #d35400;
+    background-color: #ff99cc;  /* 悬停时变为深粉色 */
+}
+
+/* 特别设置 12/21 的日期样式 */
+.special-date {
+    background-color: #ff3366;  /* 鲜艳的深粉色背景 */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.special-date:hover {
+    background-color: #ff1a53;  /* 悬停时加深 */
 }
 
 .blank {
     visibility: hidden;  /* 空白填充 */
 }
+
