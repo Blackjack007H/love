@@ -13,16 +13,41 @@ body {
 }
 
 .container {
+    width: 90%;  /* 宽度为 90%，避免太窄 */
+    max-width: 1200px;  /* 最大宽度，防止页面过宽 */
+    background: rgba(255, 255, 255, 0.8);  /* 半透明白色背景，提升文字可读性 */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* 增加阴影效果 */
     text-align: center;
-    color: white;
-    background: rgba(255, 0, 0, 0.5); /* 半透明红色背景 */
-    padding: 20px;
-    border-radius: 10px;
 }
 
-.message h1 {
+h1 {
     font-size: 3em;
-    font-weight: bold;
-    font-style: italic;
-    text-shadow: 2px 2px 4px #000000; /* 黑色阴影文字 */
+    color: #d00000;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px #000000;  /* 黑色阴影提升对比度 */
 }
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  /* 自适应网格布局 */
+    gap: 10px;  /* 网格项之间的间距 */
+    margin-top: 20px;
+}
+
+.link-grid a {
+    display: block;
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.link-grid a:hover {
+    background-color: #ff4d4d;  /* 悬停时的背景颜色变化 */
+}
+
