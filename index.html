@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Special Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-image: url('1.jpg');  /* 设置背景图片 */
+            background-size: cover;  /* 图片全屏显示 */
+            background-position: center;  /* 居中显示背景 */
+            position: relative;
+        }
+        .heart-link {
+            position: absolute;
+            top: 45%;  /* 调整爱心位置的垂直百分比 */
+            left: 43%;  /* 调整爱心位置的水平百分比 */
+            width: 10%;  /* 爱心区域的宽度 */
+            height: 15%;  /* 爱心区域的高度 */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- 透明的链接区域，位于爱心位置上方 -->
+    <a href="loveletter.html" class="heart-link"></a>
+</body>
+</html>
