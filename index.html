@@ -8,26 +8,24 @@
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
             font-family: Arial, sans-serif;
             background-image: url('1.jpg');  /* 设置背景图片 */
-            background-size: cover;  /* 平铺背景图片，保持比例 */
-            background-position: center;  /* 居中背景 */
-            background-repeat: no-repeat;  /* 不重复背景 */
+            background-size: cover;  /* 图片全屏显示 */
+            background-position: center;  /* 居中显示背景 */
             position: relative;
         }
-
         .heart-link {
             position: absolute;
-            top: 350px;  /* 固定垂直位置 */
-            left: 470px;  /* 固定水平位置 */
-            width: 100px;  /* 爱心区域的宽度 */
-            height: 100px;  /* 爱心区域的高度 */
+            top: 30%;  /* 调整爱心位置的垂直百分比 */
+            left: 39%;  /* 调整爱心位置的水平百分比 */
+            width: 12%;  /* 爱心区域的宽度 */
+            height: 18%;  /* 爱心区域的高度 */
             cursor: pointer;
-
+            
             /* 临时的边框和背景颜色，便于定位 */
             border: 2px dashed red;  /* 红色虚线边框 */
             background-color: rgba(255, 0, 0, 0.2);  /* 半透明红色背景 */
