@@ -38,11 +38,6 @@ p {
     z-index: 1; /* 确保文字在伪元素上方 */
 }
 
-/* 移除 p::before 样式，避免灰色线条或背景 */
-p::before {
-    display: none;
-}
-
 a {
     display: block;
     margin-top: 30px;
