@@ -20,6 +20,7 @@ body {
     font-size: 1.5em; /* 文字稍大，模仿书信的排版 */
     line-height: 2; /* 调整行高，增加行距 */
     position: relative;
+    z-index: 0; /* 确保 container 不被伪元素覆盖 */
 }
 
 h1 {
@@ -35,6 +36,7 @@ p {
     line-height: 2; /* 保证每行文字有足够的间隔 */
     margin-bottom: 20px;
     position: relative;
+    z-index: 1; /* 确保文字在伪元素上方 */
 }
 
 p::before {
@@ -51,7 +53,7 @@ p::before {
         #ccc 91%,
         #ccc 100%
     );
-    z-index: -1;
+    z-index: -1; /* 确保伪元素位于文字后面 */
     height: 100%;
 }
 
