@@ -3,7 +3,6 @@ body {
     font-family: 'Dancing Script', cursive; /* 使用手写风格字体 */
     margin: 0;
     padding: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,17 +56,23 @@ p::before {
     height: 100%;
 }
 
+.link-container {
+    display: flex; /* 使用 flexbox 来水平排列链接 */
+    justify-content: center; /* 居中对齐 */
+    gap: 20px; /* 链接之间的间距 */
+}
+
 a {
-    display: block;
-    margin-top: 30px;
     text-align: center;
     text-decoration: none;
     color: #8b4513; /* 深棕色的返回链接 */
     font-weight: bold;
+    background-color: transparent; /* 去除任何可能的背景颜色 */
+    box-shadow: none; /* 去除链接阴影 */
+    padding: 10px 20px; /* 为链接增加一些填充，提升可点击区域 */
 }
 
 a:hover {
     color: #a0522d; /* 鼠标悬停时颜色变化 */
 }
-
 
