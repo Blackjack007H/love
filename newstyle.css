@@ -3,10 +3,11 @@ body {
     font-family: 'Dancing Script', cursive; /* 使用手写风格字体 */
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* 移除 height: 100vh， 以允许页面根据内容扩展 */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* 从顶部开始排列内容 */
+    min-height: 100vh; /* 让页面最小高度为视口高度，内容超出时可滚动 */
 }
 
 .container {
@@ -20,7 +21,6 @@ body {
     font-size: 1.5em; /* 文字稍大，模仿书信的排版 */
     line-height: 2; /* 调整行高，增加行距 */
     position: relative;
-    z-index: 0; /* 确保 container 不被伪元素覆盖 */
 }
 
 h1 {
@@ -69,4 +69,5 @@ a {
 a:hover {
     color: #a0522d; /* 鼠标悬停时颜色变化 */
 }
+
 
