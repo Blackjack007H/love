@@ -38,41 +38,22 @@ p {
     z-index: 1; /* 确保文字在伪元素上方 */
 }
 
+/* 移除 p::before 样式，避免灰色线条或背景 */
 p::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 90%,
-        #ccc 91%,
-        #ccc 100%
-    );
-    z-index: -1; /* 确保伪元素位于文字后面 */
-    height: 100%;
-}
-
-.link-container {
-    display: flex; /* 使用 flexbox 来水平排列链接 */
-    justify-content: center; /* 居中对齐 */
-    gap: 20px; /* 链接之间的间距 */
+    display: none;
 }
 
 a {
+    display: block;
+    margin-top: 30px;
     text-align: center;
     text-decoration: none;
     color: #8b4513; /* 深棕色的返回链接 */
     font-weight: bold;
-    background-color: transparent; /* 去除任何可能的背景颜色 */
-    box-shadow: none; /* 去除链接阴影 */
-    padding: 10px 20px; /* 为链接增加一些填充，提升可点击区域 */
 }
 
 a:hover {
     color: #a0522d; /* 鼠标悬停时颜色变化 */
 }
+
 
